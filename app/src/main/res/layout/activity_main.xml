@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:background="@drawable/header_background"
+        android:elevation="4dp"
+        android:layout_marginBottom="32dp">
+
+        <!-- Логотип слева -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_red"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="16dp" />
+
+        <!-- Текст справа -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_company"
+                android:textColor="#D32F2F"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.01"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_sistem"
+                android:layout_gravity="center"
+                android:textColor="#424242"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <!-- Карточка авторизации -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="#FFFFFF">
+
+                <!-- Заголовок карточки -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_window"
+                    android:textColor="#212121"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="32dp"/>
+
+                <!-- Поле для Логина -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login"
+                        android:textColor="#424242"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                    <EditText
+                        android:id="@+id/et_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:hint="Введите логин"
+                        android:textColor="#212121"
+                        android:textColorHint="#9E9E9E"
+                        android:textSize="16sp"
+                        android:background="@drawable/edittext_background"
+                        android:paddingHorizontal="16dp"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+                </LinearLayout>
+
+                <!-- Поле для Пароля -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="32dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password"
+                        android:textColor="#424242"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absolutex="92dp"
+                        app:passwordToggleEnabled="true"
+
+                        tools:layout_editor_absolutey="248dp">
+
+                        <EditText
+                            android:id="@+id/passwordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:ems="5"
+                            android:gravity="center"
+                            android:hint="@string/text_edittext"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <!-- Кнопка входа -->
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="@string/text_btn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:onClick=""
+                    android:textStyle="bold"
+                    android:backgroundTint="#D32F2F"
+                    android:letterSpacing="0.05"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- Нижний колонтитул -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_bottom"
+                android:textColor="#757575"
+                android:textSize="12sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_version"
+                android:textColor="#9E9E9E"
+                android:textSize="10sp"/>
+        </LinearLayout>
+</LinearLayout>

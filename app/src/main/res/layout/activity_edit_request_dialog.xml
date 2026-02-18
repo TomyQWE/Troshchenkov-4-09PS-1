@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_edit_request"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Название объекта -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_object_edit"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_object_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите название объекта"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Бригада -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_delete_team"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите название бригады"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Тип работ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_delete_type_object"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_work_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите тип работ"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Дата -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_date_edit"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ДД.ММ.ГГГГ"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:backgroundTint="@color/theme_toggle_background"
+                android:text="Отмена"
+                android:textColor="@color/rzd_primary_red"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="50"
+                android:backgroundTint="@color/rzd_primary_red"
+                android:text="Сохранить"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

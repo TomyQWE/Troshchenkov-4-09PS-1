@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Разделитель (скрывается для первого сотрудника) -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- ФИО и должность -->
+    <TextView
+        android:id="@+id/tv_employee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_fio_employees"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/tv_employee_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_post"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Контактная информация -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_contacts"
+            android:textColor="#424242"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_employee_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_number"
+            android:textColor="#424242"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_employee_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_email"
+            android:textColor="#424242"
+            android:textSize="13sp"/>
+    </LinearLayout>
+</LinearLayout>
