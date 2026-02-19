@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные цвета для белой темы -->
+    <color name="rzd_background">#FFFFFF</color> <!-- Белый фон -->
+    <color name="rzd_primary_red">#D32F2F</color> <!-- Красный РЖД -->
+
+    <!-- Текст -->
+    <color name="rzd_text_primary">#212121</color> <!-- Темно-серый основной текст -->
+    <color name="rzd_text_secondary">#757575</color> <!-- Серый вторичный текст -->
+    <color name="rzd_text_hint">#9E9E9E</color> <!-- Серый цвет подсказок -->
+
+    <!-- Элементы интерфейса -->
+    <color name="rzd_divider">#E0E0E0</color> <!-- Светло-серые разделители -->
+    <color name="rzd_button_text">#FFFFFF</color> <!-- Белый текст на кнопках -->
+
+    <!-- Цвета статусов -->
+    <color name="status_high">#F44336</color> <!-- Высокий приоритет -->
+    <color name="status_medium">#FF9800</color> <!-- Средний приоритет -->
+
+
+    <!-- Фоны статусов -->
+    <color name="status_high_bg">#FFEBEE</color>
+    <color name="status_medium_bg">#FFF3E0</color>
+    <color name="theme_toggle_background">#F5F5F5</color> <!-- Светло-серый фон кнопки -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="filter_selected_bg">#FFEBEE</color>
+    <color name="filter_selected_text">#D32F2F</color>
+</resources>
